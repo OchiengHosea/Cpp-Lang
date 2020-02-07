@@ -19,6 +19,9 @@ void MainWindow::printMessage(){
     cout << "My new Message" << endl;
 }
 
-void MainWindow::scaleNumber(int val) {
-    cout << "Scale 2 of that number is " + val*2 << endl;
+void MainWindow::scaleNumber() {
+    QString string1 = ui->textEdit->toPlainText();
+    QString string2 = ui->textEdit_2->toPlainText();
+    ui->label->setText(string1 + string2);
+    cout << "Scale 2 of that number is "<< 200*2 << endl;
 }
