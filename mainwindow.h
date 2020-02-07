@@ -23,7 +23,7 @@ signals:
 
 public slots:
     void printMessage();
-    void scaleNumber();
+    void swapNumbers();
 };
 
 #endif // MAINWINDOW_H

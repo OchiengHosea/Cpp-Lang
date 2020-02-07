@@ -11,6 +11,13 @@ template <typename T> QString Swap(T &n1, T&n2) {
     n2 = temp;
     return n1 + " " + n2;
 }
+
+template <class T> class Person{
+public:
+    T var;
+    T printSomething(T arg);
+};
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -32,5 +39,5 @@ void MainWindow::swapNumbers() {
     QString string2 = ui->textEdit_2->toPlainText();
     QString Mswap = Swap(string1, string2);
     ui->label->setText(Mswap);
-    cout << "Swap of the two values"<< to_string(575) << endl;
+    cout << "Swap of the two values"<< endl;
 }

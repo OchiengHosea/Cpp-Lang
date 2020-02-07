@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Swap Values</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -40,7 +40,7 @@
      <enum>Qt::TabFocus</enum>
     </property>
     <property name="text">
-     <string>Enter 2 numbers</string>
+     <string>Enter 2 Values to Swap</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -94,11 +94,11 @@
    <sender>pushButton</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>scaleNumber()</slot>
+   <slot>swapNumbers()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>76</x>
-     <y>89</y>
+     <x>256</x>
+     <y>159</y>
     </hint>
     <hint type="destinationlabel">
      <x>186</x>
@@ -110,6 +110,6 @@
  <slots>
   <signal>setNumber()</signal>
   <slot>printMessage()</slot>
-  <slot>scaleNumber()</slot>
+  <slot>swapNumbers()</slot>
  </slots>
 </ui>
