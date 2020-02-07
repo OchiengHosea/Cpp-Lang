@@ -17,21 +17,21 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>100</y>
-      <width>89</width>
+      <x>140</x>
+      <y>180</y>
+      <width>191</width>
       <height>25</height>
      </rect>
     </property>
     <property name="text">
-     <string>Swap Values</string>
+     <string>Compare Values</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>160</y>
+      <y>90</y>
       <width>231</width>
       <height>61</height>
      </rect>
@@ -40,7 +40,7 @@
      <enum>Qt::TabFocus</enum>
     </property>
     <property name="text">
-     <string>Enter 2 Values to Swap</string>
+     <string>Enter 2 Values to Compare</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -51,9 +51,15 @@
      <rect>
       <x>70</x>
       <y>30</y>
-      <width>141</width>
+      <width>161</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhDigitsOnly</set>
+    </property>
+    <property name="acceptRichText">
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QTextEdit" name="textEdit_2">
@@ -64,6 +70,12 @@
       <width>151</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhDigitsOnly</set>
+    </property>
+    <property name="acceptRichText">
+     <bool>false</bool>
     </property>
    </widget>
   </widget>
@@ -94,7 +106,7 @@
    <sender>pushButton</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>swapNumbers()</slot>
+   <slot>compareValues()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>256</x>
@@ -111,5 +123,6 @@
   <signal>setNumber()</signal>
   <slot>printMessage()</slot>
   <slot>swapNumbers()</slot>
+  <slot>compareValues()</slot>
  </slots>
 </ui>

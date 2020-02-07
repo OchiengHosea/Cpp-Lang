@@ -24,6 +24,7 @@ signals:
 public slots:
     void printMessage();
     void swapNumbers();
+    void compareValues();
 };
 
 #endif // MAINWINDOW_H
